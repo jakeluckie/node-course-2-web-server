@@ -50,8 +50,8 @@ app.get('/about', (req,res) => {
 });
 
 app.get('/projects', (req,res) => {
-    res.render('about.hbs', {
-        pageTitle: 'About'
+    res.render('projects.hbs', {
+        pageTitle: 'Projects'
     });
 });
 
