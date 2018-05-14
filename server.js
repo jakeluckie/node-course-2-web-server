@@ -49,6 +49,12 @@ app.get('/about', (req,res) => {
     });
 });
 
+app.get('/projects', (req,res) => {
+    res.render('about.hbs', {
+        pageTitle: 'About'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Oh fuckity fuck!',
